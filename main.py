@@ -74,7 +74,8 @@ def main():
         resized_image = image.resize((800, 600), Image.Resampling.LANCZOS)
         image_bytes = BytesIO()
         resized_image.save(image_bytes, format="PNG")
-        st.image(resized_image, caption='Uploaded ECG Image', use_column_width=True)
+        st.image(ecg_image, caption='Uploaded ECG Image', use_container_width=True)
+        
 
         if st.button("Generate ECG Report"):
             with st.spinner("Analyzing ECG image..."):
