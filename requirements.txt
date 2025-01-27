@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+python-dotenv
+pillow==10.0.0
+python-docx
+google-generativeai
+gunicorn
+python-multipart
+streamlit
